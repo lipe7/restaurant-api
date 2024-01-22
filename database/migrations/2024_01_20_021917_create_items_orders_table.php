@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('order_id')->constrained('orders');
             $table->foreignId('item_id')->constrained('dishes');
+            $table->integer('quantity');
             $table->timestamps();
         });
     }
