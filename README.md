@@ -31,7 +31,7 @@ Para Subir os Containers atreáves do Laravel Sail
 Gere a key da aplicação
 
 ```bash
-        sail artisan key:generate
+    sail artisan key:generate
 
 ```
 
