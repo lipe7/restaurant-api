@@ -41,7 +41,7 @@ Caso necessário, certifique-se de ter permissões adequadas para executar o scr
     chmod +x sail-commands.sh
 ```
 
-Verifique se o Mysql está rodando e execute o script com os comandos artisan
+Verifique se o Mysql está rodando(`sail mysql`) e execute o script com os comandos artisan
 
 ```bash
     sail bash sail-commands.sh
