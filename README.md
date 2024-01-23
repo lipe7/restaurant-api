@@ -16,7 +16,7 @@ Instale as dependências necessárias
     composer install
 ```
 
-Gere o arquivo .env
+Gere o arquivo .env e a key da aplicação
 
 ```bash
     cp .env.example .env
@@ -28,13 +28,20 @@ Para Subir os Containers atreáves do Laravel Sail
     sail up -d
 ```
 
+Gere a key da aplicação
+
+```bash
+        sail artisan key:generate
+
+```
+
 Caso necessário, certifique-se de ter permissões adequadas para executar o script
 
 ```bash
     chmod +x sail-commands.sh
 ```
 
-Execute o script com os comandos artisan
+Verifique se o Mysql está rodando e execute o script com os comandos artisan
 
 ```bash
     sail bash sail-commands.sh
