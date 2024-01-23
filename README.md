@@ -34,6 +34,17 @@ Caso necessário, certifique-se de ter permissões adequadas para executar o scr
     chmod +x sail-commands.sh
 ```
 
+Execute para trabalhar com filas
+
+```bash
+    sail artisan horizon
+```
+
+## Monitoramento (Filas, Eventos, Requests, etc...)
+```bash
+    http://localhost/telescope
+```
+
 ## Referência de API
 
 #### Headers
