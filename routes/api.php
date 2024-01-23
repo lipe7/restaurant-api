@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\Api\OrderController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,8 +21,8 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 
 
 Route::prefix('orders')->group(function () {
-    Route::post('/', [OrderController::class, 'createOrder']);
-    Route::get('{id}', [OrderController::class, 'consultOrder']);
+    Route::post('create', [OrderController::class, 'createOrder']);
     Route::get('processing', [OrderController::class, 'listOrdersInProcessing']);
+    Route::get('{id}/consult', [OrderController::class, 'consultOrder']);
     Route::delete('{id}/cancel', [OrderController::class, 'cancelOrder']);
 });
