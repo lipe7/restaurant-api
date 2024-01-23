@@ -37,7 +37,7 @@ class OrderController extends Controller
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
-                'msg' => 'Erro ao buscar',
+                'msg' => 'Error when searching',
                 'error' => 'The record does not exist or has been removed.'
             ],400);
         }
@@ -54,7 +54,7 @@ class OrderController extends Controller
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
-                'msg' => 'Erro ao buscar',
+                'msg' => 'Error when searching',
                 'error' => 'The record does not exist or has been removed.'
             ],400);
         }
