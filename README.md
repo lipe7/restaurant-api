@@ -28,7 +28,6 @@ Caso necessário, certifique-se de ter permissões adequadas para executar o scr
     chmod +x sail-commands.sh
 ```
 
-
 ## Referência de API
 
 #### Headers
@@ -45,10 +44,10 @@ Caso necessário, certifique-se de ter permissões adequadas para executar o scr
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `client_name` | `string` | **Required** |
-| `table` | `integer	` | **Required** |
+| `table` | `integer` | **Required** |
 | `items` | `array` | **Required** |
-| `items.item_id` | `integer	` | **Required** |
-| `items.quantity` | `integer	` | **Required** |
+| `items.item_id` | `integer` | **Required** |
+| `items.quantity` | `integer` | **Required** |
 
 #### Obter Pedidos em Processamento
 ```http
@@ -58,10 +57,10 @@ Caso necessário, certifique-se de ter permissões adequadas para executar o scr
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `per_page` | `string` | **Optional** (default 10)|
-| `order_by` | `integer	` | **Optional** (default id)|
+| `order_by` | `integer` | **Optional** (default id)|
 | `order_by_type` | `array` | **Optional** (default asc)|
-| `page` | `integer	` | **Optional** (default 1)|
-| `search_term` | `integer	` | **Optional**|
+| `page` | `integer` | **Optional** (default 1)|
+| `search_term` | `integer` | **Optional**|
 
 #### Consultar Pedido
 
