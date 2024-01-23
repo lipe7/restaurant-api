@@ -9,17 +9,21 @@ class ItemOrder extends Model
 {
     use HasFactory;
 
+    protected $table = 'items_orders';
+
     protected $fillable = [
-        'item_id'
+        'order_id',
+        'item_id',
+        'quantity'
     ];
 
-    public function order()
+    public function orders()
     {
-        return $this->belongsTo(Order::class, 'order_id');
+        return $this->belongsTo(Order::class, 'order_id', 'id');
     }
 
     public function dish()
     {
-        return $this->belongsTo(Dish::class, 'item_id');
+        return $this->belongsTo(Dish::class, 'item_id', 'id');
     }
 }
