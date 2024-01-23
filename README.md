@@ -2,6 +2,12 @@
 
 Sistema de Notificações em Tempo Real para Pedidos de Restaurantes
 
+## Tech Stack
+
+**PHP:** v8.1.2
+
+**Laravel:** v10.10
+
 ## Instalação
 
 Instale as dependências necessárias
